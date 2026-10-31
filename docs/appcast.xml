@@ -3,13 +3,13 @@
   <channel>
     <title>AgentWatcher</title>
     <item>
-      <title>Version 1.0.5</title>
-      <pubDate>Sat, 31 Oct 2026 15:54:16 +0000</pubDate>
-      <sparkle:version>10005</sparkle:version>
-      <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+      <title>Version 1.0.6</title>
+      <pubDate>Sat, 31 Oct 2026 17:20:35 +0000</pubDate>
+      <sparkle:version>10006</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <link>https://github.com/abdul10ahad/homebrew-tap/releases/tag/v1.0.5</link>
-      <enclosure url="https://github.com/abdul10ahad/homebrew-tap/releases/download/v1.0.5/AgentWatcher-1.0.5.zip" sparkle:edSignature="yjBkHd17HCCSoDOp6+7afzmDvATeIWP2XES/ucwdj6gj9K3brlV2mDo494fUhpFQk4kiNfxfoS8b8wQZX2zKBg==" length="5315206" type="application/octet-stream"/>
+      <link>https://github.com/abdul10ahad/homebrew-tap/releases/tag/v1.0.6</link>
+      <enclosure url="https://github.com/abdul10ahad/homebrew-tap/releases/download/v1.0.6/AgentWatcher-1.0.6.zip" sparkle:edSignature="FiQbJh/tSE4tCOg9qy6SJ178bd3qugvmyZf+RDUy9+SgY6CW9LoZpKC0wC+PpsNQECBqegzkDbaYhZpDhvqNAg==" length="5399979" type="application/octet-stream"/>
     </item>
   </channel>
 </rss>
