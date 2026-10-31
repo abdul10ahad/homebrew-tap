@@ -5,7 +5,7 @@ cask "agentwatcher" do
   url "https://github.com/abdul10ahad/homebrew-tap/releases/download/v#{version}/AgentWatcher-#{version}.zip"
   name "AgentWatcher"
   desc "Keeps the computer awake while AI coding agents work, lid closed too"
-  homepage "https://github.com/abdul10ahad/homebrew-tap"
+  homepage "https://abdul10ahad.github.io/homebrew-tap/"
 
   livecheck do
     url :url
@@ -19,5 +19,8 @@ cask "agentwatcher" do
   uninstall quit:   "com.abdulahad.AgentWatcher",
             delete: "/etc/sudoers.d/agentwatcher"
 
-  zap trash: "~/Library/Preferences/com.abdulahad.AgentWatcher.plist"
+  zap trash: [
+    "~/Library/Caches/com.abdulahad.AgentWatcher",
+    "~/Library/Preferences/com.abdulahad.AgentWatcher.plist",
+  ]
 end

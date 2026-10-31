@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AgentWatcher</title>
+<meta name="description" content="A menu bar app that keeps your Mac awake while AI coding agents work, with the lid closed too.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --action: #0038FF; --background: #EFFAFF; --card: #FFFFFF; --text: #242424; --grey: #777777;
+    --code: #F5F5F5; --line: rgba(0, 0, 0, .08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --action: #3D6BFF; --background: #101318; --card: #13213A; --text: #F2F4F7; --grey: #9AA0A8;
+      --code: #23272F; --line: rgba(255, 255, 255, .08);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--background); color: var(--text);
+    font: 16px/1.55 Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 16px 48px; }
+  header { text-align: center; }
+  header img { width: 128px; height: 128px; }
+  h1 { font-size: 44px; line-height: 1.1; margin: 16px 0 8px; letter-spacing: -.02em; }
+  .tagline { font-size: 20px; color: var(--grey); margin: 0 auto 32px; max-width: 520px; }
+  .download {
+    display: inline-block; background: var(--action); color: #fff; text-decoration: none;
+    font-weight: 600; padding: 14px 28px; border-radius: 15px;
+  }
+  .download:hover { filter: brightness(1.1); }
+  .meta { color: var(--grey); font-size: 14px; margin: 12px 0 0; }
+  .brew {
+    display: flex; align-items: center; gap: 8px; max-width: 520px; margin: 28px auto 0;
+    background: var(--code); border-radius: 8px; padding: 10px 10px 10px 14px; text-align: left;
+  }
+  .brew code { flex: 1; font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; white-space: nowrap; }
+  .brew button {
+    font: 500 13px Inter, sans-serif; color: var(--action); background: none; border: 1px solid var(--line);
+    border-radius: 8px; padding: 6px 10px; cursor: pointer;
+  }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 64px; }
+  .feature { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 20px; }
+  .feature h2 { font-size: 17px; margin: 0 0 6px; }
+  .feature p { margin: 0; color: var(--grey); font-size: 15px; }
+  footer { text-align: center; color: var(--grey); font-size: 14px; margin-top: 56px; }
+  footer a { color: var(--action); }
+  @media (max-width: 480px) { h1 { font-size: 36px; } .tagline { font-size: 18px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="">
+    <h1>AgentWatcher</h1>
+    <p class="tagline">Keeps your Mac awake while AI coding agents work, with the lid closed too, and lets it sleep when they're done.</p>
+    <a class="download" href="https://github.com/abdul10ahad/homebrew-tap/releases/latest/download/AgentWatcher.dmg">Download for Mac</a>
+    <p class="meta">Free · macOS 14 or later · Apple silicon and Intel · Signed and notarized by Apple</p>
+    <div class="brew">
+      <code id="brew">brew install --cask abdul10ahad/tap/agentwatcher</code>
+      <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('brew').textContent).then(() => { this.textContent = 'Copied' })">Copy</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <h2>Awake while agents work</h2>
+      <p>Claude Code, Codex, Cursor and Gemini CLI. It watches for agents that are actually working, not just open. No setup.</p>
+    </div>
+    <div class="feature">
+      <h2>Lid closed too</h2>
+      <p>Close the lid and the work goes on with the screen dark. When it's done, your Mac goes to sleep.</p>
+    </div>
+    <div class="feature">
+      <h2>Lets go on its own</h2>
+      <p>It stops holding your Mac awake when it gets hot or the battery runs low, so a Mac in a bag stays safe.</p>
+    </div>
+    <div class="feature">
+      <h2>Or by hand</h2>
+      <p>Click the eye in the menu bar to keep it awake for 15 minutes, a few hours, or until you turn it off.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Updates install from inside the app. <a href="https://github.com/abdul10ahad/homebrew-tap/releases">All releases</a></p>
+  </footer>
+</main>
+</body>
+</html>
