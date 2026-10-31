@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>AgentWatcher</title>
+    <item>
+      <title>Version 1.0.4</title>
+      <pubDate>Sat, 31 Oct 2026 14:30:30 +0000</pubDate>
+      <sparkle:version>10004</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <link>https://github.com/abdul10ahad/homebrew-tap/releases/tag/v1.0.4</link>
+      <enclosure url="https://github.com/abdul10ahad/homebrew-tap/releases/download/v1.0.4/AgentWatcher-1.0.4.zip" sparkle:edSignature="KHIdx9uyCQaTGnV3aypt/o6TUQtZkCYBXzPtSvhFi6i2XoqgXLWq3o/uDjdj6iUOFhLBDpq7Yqv5ITFSN2ulDw==" length="4417682" type="application/octet-stream"/>
+    </item>
+  </channel>
+</rss>
