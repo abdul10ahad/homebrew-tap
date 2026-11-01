@@ -40,7 +40,7 @@
     display: flex; align-items: center; gap: 8px; max-width: 520px; margin: 28px auto 0;
     background: var(--code); border-radius: 8px; padding: 10px 10px 10px 14px; text-align: left;
   }
-  .brew code { flex: 1; font: 14px ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; white-space: nowrap; }
+  .brew code { flex: 1; font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; white-space: pre; }
   .brew button {
     font: 500 13px Inter, sans-serif; color: var(--action); background: none; border: 1px solid var(--line);
     border-radius: 8px; padding: 6px 10px; cursor: pointer;
@@ -63,7 +63,8 @@
     <a class="download" href="https://github.com/abdul10ahad/homebrew-tap/releases/latest/download/AgentWatcher.dmg">Download for Mac</a>
     <p class="meta">Free · macOS 14 or later · Apple silicon and Intel · Signed and notarized by Apple</p>
     <div class="brew">
-      <code id="brew">brew install --cask abdul10ahad/tap/agentwatcher</code>
+      <code id="brew">brew trust --cask abdul10ahad/tap/agentwatcher
+brew install --cask abdul10ahad/tap/agentwatcher</code>
       <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('brew').textContent).then(() => { this.textContent = 'Copied' })">Copy</button>
     </div>
   </header>

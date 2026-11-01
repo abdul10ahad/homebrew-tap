@@ -6,8 +6,12 @@ Gemini CLI) work, with the lid closed too, and lets it sleep again when they fin
 Website and download: https://abdul10ahad.github.io/homebrew-tap/
 
 ```sh
+brew trust --cask abdul10ahad/tap/agentwatcher
 brew install --cask abdul10ahad/tap/agentwatcher
 ```
+
+Homebrew 7 loads casks from other people's taps only once you trust them, which the first line does
+for this one cask. On older Homebrew it fails harmlessly and the install still runs.
 
 It's signed with Developer ID and notarized by Apple, and updates itself from inside the app.
 This repository holds only the cask, the website and the release builds.
