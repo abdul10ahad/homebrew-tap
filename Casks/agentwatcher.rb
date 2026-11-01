@@ -1,6 +1,6 @@
 cask "agentwatcher" do
-  version "1.0.6"
-  sha256 "8e3cc74fe23ec4a929bcf1d354bdbbd0d2edd717cecc47a6dfc7dd85a8fe06ce"
+  version "1.0.7"
+  sha256 "4652f777a5c8df86d167a5df185e25452cfe9cf7b862069b8a5067442f8be604"
 
   url "https://github.com/abdul10ahad/homebrew-tap/releases/download/v#{version}/AgentWatcher-#{version}.zip"
   name "AgentWatcher"
