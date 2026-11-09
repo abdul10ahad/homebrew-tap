@@ -12,6 +12,8 @@ cask "agentwatcher" do
     strategy :github_latest
   end
 
+  # Sparkle updates it in place; brew upgrade would run the uninstall below and drop lid closed mode
+  auto_updates true
   depends_on macos: :sonoma
 
   app "AgentWatcher.app"
